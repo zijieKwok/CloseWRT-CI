@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       CONFIG:
-        default: 'MTK-7981'
+        default: 'MTK-7986'
         required: true
         type: choice
         options: [MT7981, MT7986, TEST]
