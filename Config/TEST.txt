@@ -7,7 +7,6 @@ CONFIG_TARGET_mediatek_mt7986_DEVICE_tplink_tl-xdr6086=y
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-mosdns=y
 CONFIG_PACKAGE_luci-app-mwan3=y
-CONFIG_PACKAGE_luci-theme-argon=y
 #必选组件，请勿修改
 CONFIG_first_card_name="MT7986"
 CONFIG_MTK_CHIP_MT7986=y
