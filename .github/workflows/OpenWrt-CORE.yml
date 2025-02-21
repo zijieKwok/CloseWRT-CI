@@ -1,5 +1,5 @@
 #云编译公用核心
-name: WRT-CORE
+name: OpenWrt-CORE
 
 on:
   workflow_call:
@@ -176,7 +176,7 @@ jobs:
           make defconfig -j$(nproc) && make clean -j$(nproc)
 
       - name: Download Packages
-        if: env.WRT_TEST != 'true'
+        if: env.OpenWrt_TEST != 'true'
         run: |
           cd ./wrt/
 
