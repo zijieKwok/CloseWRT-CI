@@ -61,7 +61,7 @@ UPDATE_PACKAGE "ssr-plus" "fw876/helloworld" "master"
 UPDATE_PACKAGE "alist" "sbwml/luci-app-alist" "main"
 UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5"
 
-UPDATE_PACKAGE "luci-app-netdata" "Jaykwok2999/istoreos-ipk" "main" "pkg"
+UPDATE_PACKAGE "luci-app-onliner" "Jaykwok2999/istoreos-ipk" "main" "pkg"
 UPDATE_PACKAGE "linkease" "zijieKwok/linkease" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 
