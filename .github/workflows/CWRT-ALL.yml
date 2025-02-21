@@ -1,5 +1,5 @@
 #CI项目
-name: CWRT-ALL
+name: OpenWrt-ALL
 
 #CI计划
 on:
@@ -53,8 +53,8 @@ jobs:
         REPO_INFO:
           - {SOURCE: zijieKwok/immortalwrt-mt798x-24.10, BRANCH: openwrt-24.10}
 
-    #调用公用编译核心WRT-CORE.yml
-    uses: ./.github/workflows/WRT-CORE.yml
+    #调用公用编译核心OpenWrt-CORE.yml
+    uses: ./.github/workflows/OpenWrt-CORE.yml
     with:
       #编译配置
       WRT_CONFIG: ${{matrix.CONFIG}}
