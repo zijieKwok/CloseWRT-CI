@@ -9,7 +9,7 @@ sed -i "s/(\(luciversion || ''\))/(\1) + (' \/ $WRT_CI-$WRT_DATE')/g" $(find ./f
 
 WIFI_FILE="./package/mtk/applications/mtwifi-cfg/files/mtwifi.sh"
 #修改WIFI名称
-sed -i "s/ImmortalWrt/OpenWrt/g" $WIFI_FILE
+sed -i "s/ImmortalWrt/$WRT_SSID/g" $WIFI_FILE
 #修改WIFI加密
 sed -i "s/encryption=.*/encryption='psk2+ccmp'/g" $WIFI_FILE
 #修改WIFI密码
@@ -17,9 +17,9 @@ sed -i "/set wireless.default_\${dev}.encryption='psk2+ccmp'/a \\\t\t\t\t\t\set 
 
 CFG_FILE="./package/base-files/files/bin/config_generate"
 #修改默认IP地址
-sed -i "s/192\.168\.[0-9]*\.[0-9]*/192.168.5.1/g" $CFG_FILE
+sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $CFG_FILE
 #修改默认主机名
-sed -i "s/hostname='.*'/hostname='OpenWrt'/g" $CFG_FILE
+sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
 
 #配置文件修改
 echo "CONFIG_PACKAGE_luci=y" >> ./.config
